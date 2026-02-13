@@ -1,3 +1,4 @@
 # algorithm-java (2026)
 ## 문법
 - [Stack과 Queue, 왜 Deque로 구현해야 할까?](https://github.com/SeoMiYoung/algorithm-java/issues/7)
+- [Integer.bitCount(n)](https://github.com/SeoMiYoung/algorithm-java/issues/17)
