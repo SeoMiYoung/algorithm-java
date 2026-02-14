@@ -8,3 +8,4 @@
 
 ## 📗 수학
 - [곱의 합의 최솟값](https://github.com/SeoMiYoung/algorithm-java/issues/2)
+- [모듈러 연산](https://github.com/SeoMiYoung/algorithm-java/issues/19)
