@@ -9,6 +9,7 @@
 - [Java에서 집합(Set)을 구현할 때 사용하는 HashSet](https://github.com/SeoMiYoung/algorithm-java/issues/20)
 - [Java 2차원 배열 선언, 제대로 이해하기 (int[][] vs Set[][])](https://github.com/SeoMiYoung/algorithm-java/issues/21)
 - [printf vs String.format vs println](https://github.com/SeoMiYoung/algorithm-java/issues/22)
+- [else는 선택사항](https://github.com/SeoMiYoung/algorithm-java/issues/23)
 
 
 > 📘 알고리즘
