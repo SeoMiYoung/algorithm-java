@@ -13,6 +13,7 @@
 - [ArrayList](https://github.com/SeoMiYoung/algorithm-java/issues/24)
 - [정렬](https://github.com/SeoMiYoung/algorithm-java/issues/1)
 - [배열.length, 문자열.length(), 리스트.size()](https://github.com/SeoMiYoung/algorithm-java/issues/13)
+- [모든 객체는 출력될 때 toString()이 호출된다. ](https://github.com/SeoMiYoung/algorithm-java/issues/25)
 
 
 > 📘 알고리즘
