@@ -11,6 +11,7 @@
 - [printf vs String.format vs println](https://github.com/SeoMiYoung/algorithm-java/issues/22)
 - [else는 선택사항](https://github.com/SeoMiYoung/algorithm-java/issues/23)
 - [ArrayList](https://github.com/SeoMiYoung/algorithm-java/issues/24)
+- [정렬](https://github.com/SeoMiYoung/algorithm-java/issues/1)
 
 
 > 📘 알고리즘
