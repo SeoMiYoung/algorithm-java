@@ -12,6 +12,7 @@
 - [else는 선택사항](https://github.com/SeoMiYoung/algorithm-java/issues/23)
 - [ArrayList](https://github.com/SeoMiYoung/algorithm-java/issues/24)
 - [정렬](https://github.com/SeoMiYoung/algorithm-java/issues/1)
+- [배열.length, 문자열.length(), 리스트.size()](https://github.com/SeoMiYoung/algorithm-java/issues/13)
 
 
 > 📘 알고리즘
