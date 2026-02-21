@@ -17,6 +17,7 @@
 
 
 > 📘 알고리즘
+- [BFS로 연결된 영역 크기 구하기 - "연결 요소(Connected Component) 크기 구하기"](https://github.com/SeoMiYoung/algorithm-java/issues/26)
 
 > 📗 수학
 - [곱의 합의 최솟값](https://github.com/SeoMiYoung/algorithm-java/issues/2)
