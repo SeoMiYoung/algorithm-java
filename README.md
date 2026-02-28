@@ -15,6 +15,7 @@
 - [배열.length, 문자열.length(), 리스트.size()](https://github.com/SeoMiYoung/algorithm-java/issues/13)
 - [모든 객체는 출력될 때 toString()이 호출된다. ](https://github.com/SeoMiYoung/algorithm-java/issues/25)
 - [max, min 값 구하기](https://github.com/SeoMiYoung/algorithm-java/issues/27)
+- [타입.parse타입(String)](https://github.com/SeoMiYoung/algorithm-java/issues/28)
 
 > 📘 알고리즘
 - [BFS로 연결된 영역 크기 구하기 - "연결 요소(Connected Component) 크기 구하기"](https://github.com/SeoMiYoung/algorithm-java/issues/26)
