@@ -24,15 +24,3 @@
 - [곱의 합의 최솟값](https://github.com/SeoMiYoung/algorithm-java/issues/2)
 - [모듈러 연산](https://github.com/SeoMiYoung/algorithm-java/issues/19)
 
-# 유형 정리
-- DFS/BFS
-- 시뮬레이션
-- 자료구조: 스택/큐/해시맵/우선순위큐(힙)
-- 완전탐색/백트래킹
-- 그리디
-- DP (동적계획법)
-- 이분탐색
-- 투 포인터 / 슬라이딩 윈도우
-- 정렬
-- 그래프 (최단경로: 다익스트라, 플로이드-워셜)
-- 문자열 처리
