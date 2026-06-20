@@ -1,36 +1,23 @@
+import java.util.*;
+import java.io.*;
+
 class Solution {
-    public int[] solution(String s) {
-        int countZero = 0;
-        int countChange = 0;
+    public int[] solution(String s) { // "110010101001"
+        int[] answer = {0,0}; // 회차, 제거한 0의 개수
         
-        while(true) {
-            if (s.equals("1")) {
-                break;  // 목표 달성
-            }    
+        while (!s.equals("1")) {
+            answer[0]++;
             
-            // 1. 이진 변환 시작
-            // 1-1. x의 모든 0을 제거 --> 그냥 0과 1의 개수를 세면 됨.
-            int countOne = 0;
-            for (int i=0; i<s.length(); i++) { // 문자열은 length()
-                if (s.charAt(i) == '0') { // char은 기본형 타입이라서, ==로 값 비교하는 게 정석임 
-                    countZero++;
-                }
-                else {
-                    countOne++;
-                }
-            }
+            // step1. s의 모든 0을 제거합니다.
+            String removeZeroS = s.replace("0", ""); // "111111"
+            answer[1] += (s.length() - removeZeroS.length()); // 12-6
+            String nextS = Integer.toBinaryString(removeZeroS.length());
             
-            // 1-2. countOne을 이진수로 변환하면 됨
-            s = Integer.toBinaryString(countOne); 
             
-            // 변환 횟수 추가
-            countChange++; 
-            
+            // 다음으로 넘어가기 전에 s업데이트
+            s = nextS;
         }
         
-        int[] answer = new int[2];
-        answer[0] = countChange;
-        answer[1] = countZero;
         
         return answer;
     }
