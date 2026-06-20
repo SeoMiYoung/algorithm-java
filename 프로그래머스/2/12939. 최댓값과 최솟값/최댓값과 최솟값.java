@@ -2,27 +2,18 @@ import java.util.*;
 import java.io.*;
 
 class Solution {
-    public String solution(String s) throws Exception {
-        // split은 인자 기준으로 나눠서, String 배열을 반환
-        String[] sArr = s.split(" "); // ["1", "2", "3", "4"] 
+    public String solution(String s) {
+        String[] numStringList = s.split(" "); // ["1", "2", "3", "4"]
         
-        // System.out.println(Arrays.deepToString(sArr));  // [1, 2, 3, 4]
+        // 일단 최소값, 최대값 초기화하기
+        int maxNum = Integer.parseInt(numStringList[0]);
+        int minNum = Integer.parseInt(numStringList[0]);
         
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
-        
-        for (String getS : sArr) {
-            int num = Integer.parseInt(getS);  // 문자열 --> 숫자 
-            
-            if (min > num) {
-                min = num;
-            }
-            if (max < num) {
-                max = num;
-            }
+        for (String getString : numStringList) {
+            maxNum = Math.max(maxNum, Integer.parseInt(getString));
+            minNum = Math.min(minNum, Integer.parseInt(getString));
         }
         
-        // 출력 
-        return String.format("%d %d", min, max);
+        return String.format("%d %d", minNum, maxNum);
     }
 }
