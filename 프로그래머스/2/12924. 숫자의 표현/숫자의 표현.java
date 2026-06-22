@@ -1,41 +1,37 @@
-// 이거 그거잖아! 투 포인터!
-// 두 포인터의 간격을 유동적으로 조절하면서 풀어야 함
+// 연속된 구간 --> 투포인터 or 슬라이딩 윈도우
+// 그런데, 이 문제는 윈도우 크기가 고정된 건 아니여서 --> 투 포인터
 
-// 1 2 3 4 5
+// 일단 1부터 n까지 합이 n(n+1)/2임
+// 그러면 a부터 b까지 합은 
+// b(b+1)/2 - a(a+1)/2 + a
+
+import java.util.*;
+import java.io.*;
+
 class Solution {
-    public int solution(int n) {
-        int result = 0;
+    public int solution(int n) {  // 15
+        int answer = 0;
         
-        // start <= x < end   (start:3, end:5 -> 3,4)
-        int start = 1; 
-        int end = 1;
+        int start = 1;
+        int end = 1; 
         
-        while (start <= n) {
-            // 일단 출력해봄
-            // System.out.print(String.format("%d <= x < %d", start, end));
+        while (start <= end) {
+            int twoPointSum = (end*(end+1)/2 - start*(start+1)/2 + start);
             
-            // 1. start부터 end-1까지 더해본다.  (3부터 4까지)
-            // 1-1. 1 <= x <= end-1 (1부터 4까지)  
-            int sum1 = ((end-1)*(end))/2;
-            // 1-2. 1 <= x <= start-1 (1부터 2까지)
-            int sum2 = ((start-1)*(start))/2;
-            // 계산
-            int getSum = sum1 - sum2;
-            
-            if (getSum == n) { // 목표치
-                end++;
-                result++;
-            }
-            else if (getSum < n) {
+            if (twoPointSum == n) {
+                answer++;
                 end++;
             }
-            else if (getSum > n) {
+            else if (twoPointSum < n) {
+                //  목표보다 작으면, 당연히 우측을 더 포함해야해.
+                end++;
+            }
+            else {
+                // 목표보다 크면, 줄여야 하니깐 좌측 이동
                 start++;
             }
         }
         
-      
-        return result;
+        return answer;
     }
 }
-
