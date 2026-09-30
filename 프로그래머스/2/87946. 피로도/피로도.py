@@ -1,26 +1,25 @@
+from itertools import permutations
+
 def solution(k, dungeons):
-    visited = [0] * len(dungeons) # [0,0,0]
     max_count = 0
     
-    def dfs(remaining_power, v_count):
-        # 이 함수 안에서 max_count라는 이름을 쓸 건데, 그건 새로 만드는 게 아니라 바깥 함수 걸 가져다 쓰는 거야~
-        nonlocal max_count
+    for p in permutations(dungeons, len(dungeons)): 
+        # 반환값: 이터레이터(튜플, 튜플, 튜플, ...)
+        # p: ([80,20],[50,40],[30,10])
+        count = 0
+        cur_power = k
         
-        # 빠져나오는 처리
-        if max_count < v_count:
-            max_count = v_count
-            
+        for dungeon in p:
+            if cur_power >= dungeon[0]:
+                count += 1
+                cur_power -= dungeon[1]
+            else:
+                break
+     
         
-        # 재귀 호출
-        for i in range(0, len(dungeons)):
-            if (visited[i] == 0) and (remaining_power >= dungeons[i][0]): # 아직 방문 전
-                visited[i] = 1 # 방문 처리
-                dfs(remaining_power - dungeons[i][1], v_count+1)
-                visited[i] = 0 # 미방문 처리
-            
-                    
+        if max_count < count:
+            max_count = count
     
-    dfs(k, 0)  # 아직 하나도 방문 안함
     return max_count
 
 
